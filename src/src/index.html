@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="photon.min.css" />
+    
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #04AA6D;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li><a class="active" href="main.html">Home</a></li>
+      <li><a href="index.html">Info</a></li>
+      </ul>
+    <div class="mainWrapper">
+    
+      <h1>PARAGLIDER INFO!</h1>
+
+      <form>
+        <div class="form-group">
+          <label>Paraglider Name</label>
+          <input id="fileName" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>e.g (Age,Gender,Weight,Height)</label>
+          <textarea id="fileContents" class="form-control" rows="5"></textarea>
+
+        </div>
+      </form>
+      <button id="btnCreate" class="btn btn-default">Create</button>
+      <button id="btnUpdate" class="btn btn-default">Update</button>
+      <button id="btnRead" class="btn btn-default">Read</button>
+      <button id="btnDelete" class="btn btn-default">Delete</button>
+
+    
+    </div>
+    <a href="main.html">main</a>
+
+    <script src="main.js">
+      
+      
+    </script>
+  </body>
+</html>
